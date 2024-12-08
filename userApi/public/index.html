@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User API</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>User API</h1>
+  <div>
+    <h2>Create User</h2>
+    <form id="createUserForm">
+      <input type="text" id="createUserId" placeholder="User ID" required>
+      <input type="text" id="createUserName" placeholder="User Name" required>
+      <button type="submit">Create</button>
+    </form>
+  </div>
+  <div>
+    <h2>Get User</h2>
+    <form id="getUserForm">
+      <input type="text" id="getUserId" placeholder="User ID" required>
+      <button type="submit">Get</button>
+    </form>
+    <p id="getUserResult"></p>
+  </div>
+  <div>
+    <h2>Update User</h2>
+    <form id="updateUserForm">
+      <input type="text" id="updateUserId" placeholder="User ID" required>
+      <input type="text" id="updateUserName" placeholder="New User Name" required>
+      <button type="submit">Update</button>
+    </form>
+  </div>
+  <div>
+    <h2>Delete User</h2>
+    <form id="deleteUserForm">
+      <input type="text" id="deleteUserId" placeholder="User ID" required>
+      <button type="submit">Delete</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
